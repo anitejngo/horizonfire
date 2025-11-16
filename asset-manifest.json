@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/horizonfire/static/css/main.f855e6bc.css",
+    "main.js": "/horizonfire/static/js/main.af584cdf.js",
+    "static/js/453.a568f0dd.chunk.js": "/horizonfire/static/js/453.a568f0dd.chunk.js",
+    "static/media/logo.svg": "/horizonfire/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/horizonfire/index.html",
+    "main.f855e6bc.css.map": "/horizonfire/static/css/main.f855e6bc.css.map",
+    "main.af584cdf.js.map": "/horizonfire/static/js/main.af584cdf.js.map",
+    "453.a568f0dd.chunk.js.map": "/horizonfire/static/js/453.a568f0dd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.af584cdf.js"
+  ]
+}
