@@ -4,7 +4,7 @@ import SimulationCanvas from './components/SimulationCanvas';
 import { Led } from './components/LEDRenderer';
 import { Fire2012, DIST_OFF, DIST_FULL, BRIGHTNESS, map, getSmoothedDistance, fadeToBlackBy } from './arduinoUtils';
 import { DEFAULT_CODE } from './config/arduinoDefaults';
-import { ANIMATION_INTERVAL, TEXTAREA_ROWS, TEXTAREA_COLS, DISTANCE_MIN, DISTANCE_MAX } from './config/constants';
+import { ANIMATION_INTERVAL } from './config/constants';
 import './App.css';
 
 function App() {
@@ -153,6 +153,7 @@ function App() {
         isRunning={isRunning}
         onToggle={toggleAnimation}
         onParse={parseCode}
+        numLeds={numLeds}
       />
     </div>
   );

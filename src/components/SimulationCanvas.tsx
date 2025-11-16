@@ -10,6 +10,7 @@ interface SimulationCanvasProps {
   isRunning: boolean;
   onToggle: () => void;
   onParse: () => void;
+  numLeds: number;
 }
 
 const SimulationCanvas: React.FC<SimulationCanvasProps> = ({
@@ -19,12 +20,25 @@ const SimulationCanvas: React.FC<SimulationCanvasProps> = ({
   isRunning,
   onToggle,
   onParse,
+  numLeds,
 }) => {
   return (
-    <div style={{ width: '20%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
-      <DistanceSlider distance={distance} onChange={onDistanceChange} />
+    <div style={{
+      width: '20%',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '20px',
+      height: '100vh'
+    }}>
+      <div style={{ marginBottom: '20px' }}>
+        <DistanceSlider distance={distance} onChange={onDistanceChange} />
+      </div>
       <Controls isRunning={isRunning} onToggle={onToggle} onParse={onParse} />
-      <LEDRenderer leds={[...leds].reverse()} />
+      <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '80vh', overflow: 'auto' }}>
+        <LEDRenderer leds={[...leds].reverse()} numLeds={numLeds} />
+      </div>
     </div>
   );
 };
